@@ -16,13 +16,15 @@
   @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
     
    body{
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #030006;
-    background-image: url(astero.24.png);
+    background-image: url(paint.5.png);
     background-size: cover;
+    
+    
 
    }
 
@@ -48,7 +50,7 @@
     }
 
     input{
-        border-radius:15px;
+        border-radius:6px;
         padding-bottom:1px;
         border-color: rgb(0, 0, 0);
         font-family: League Spartan;
@@ -71,12 +73,13 @@
     #login{
         margin-bottom: 20%;
         text-align: center;
-        width: 360px;
-        height: min-content;
+        width: 250px;
+        height: 270px;
         padding: 20px;
         border-radius: 12px;
         background:  rgba(3, 3, 16, 0.7);
-        border-color: #4e2bff 
+        border-block-width: 50%
+       
         
 ;
     
@@ -95,18 +98,22 @@
 
     .checkbox{
         font-family: League Spartan;
-        font-size: small;
-        padding-top:2%;
+        font-size: 70%;
         color: aliceblue;
-        text-align: ;
+        margin-right: 28% ;
+        border-style: none;
+        margin-top:0%;
+        border-style:
+     
     }
 
     button{
         border-style:none;
-        border-radius: 15px;
+        border-radius: 6px;
         margin-top: 2%;
-        padding-right: 18%;
-        padding-left: 18%;
+        margin: 7%;
+        padding-right: 25%;
+        padding-left: 26%;
         background:linear-gradient(To right, #ae3fb4, #432db6);
         color: rgb(255, 255, 255);
         font-weight: 600;
@@ -114,13 +121,22 @@
     }
 
     .Google{
-        margin-top: 6%;
+        margin-top: 1%;
         padding-left: 5%;
         padding-right: 5%;
+        margin-bottom:4%;
         font-size: 85%;
-        background: #ffffff;
-        color: #030006;
+        background: #3e40eb;
+        color: #f9f4ff;
         
+    }
+
+    .forgot {
+    padding-top:3%;
+    font-size: small;
+    color: #fafafa;
+    text-decoration: none;
+
     }
 
 
@@ -143,17 +159,27 @@
     </div>
     <div class="password">
     <input type="text" id="password" placeholder="password">
+    </div>
      
-    <div class="checkbox">
-    <input type="checkbox" id="check">
-    <label for="check">Remember Me</label>
-     </div>
+    
 <div>
      <button>Sign In</button>
      </div>
      
      <div>
      <button class="Google">Sign in with Google</button>
+
+  
+     <div class="checkbox">
+        <input type="checkbox" id="check">
+        <label for="check">Remember Me</label>
+         </div>
+
+
+    <div class="forgot">
+        <a href="forgot">Forgot Password?</a>
+    </div>
+
      </form>
    </div>
 

@@ -10,14 +10,14 @@
     <title>resgistration</title>
 </head>
 <body>
-    <section class="vh-100" style="background-image:url(paint.5.png)">
+    <section class="vh-100" ">
         <div class="container h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-lg-12 col-xl-11">
-              <div class="card text-black" style="border-radius: 25px;">
+              <div class="card text-black" ">
                 <div class="card-body p-md-5">
-                  <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                  <div class="row">
+                    <div class="col order-2 order-lg-1">
       
                       <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
       
@@ -61,7 +61,18 @@
                             I agree with all statements in <a href="#!">Terms of service</a>
                           </label>
                         </div>
-      
+                        <p>How did you hear about us?</p>
+
+                        <div class="btn-group">
+                 <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked />
+                 <label class="btn btn-secondary" for="option1">Internet Ad</label>
+
+                  <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" />
+                  <label class="btn btn-secondary" for="option2">Social Media</label>
+
+                 <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" />
+                 <label class="btn btn-secondary" for="option3">Referral</label>
+                                                                 </div>
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                           <button type="button" class="btn btn-primary btn-lg">Register</button>
                         </div>
@@ -69,15 +80,14 @@
                       </form>
       
                     </div>
-                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                    
       
-                      <img src="canvas.pic.2-removebg-preview.png"
-                        class="img-fluid" alt="Sample image">
+                      
       
                     </div>
                   </div>
                 </div>
-              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -85,21 +95,52 @@
 
       <style>
       .card-body.p-md-5{
+        margin:auto;
         background-color: none;
-        border-radius: 5%;
+        border-radius: 5em;
         color: aliceblue;
-
-      }
+        border-style: solid;
+        /* padding-right: */
+        align-items:center;
+       }
 
       .card.text-black{
-        background-color: rgb(2, 5, 25);
-        padding-left:-5em
+        background-color: rgb(244, 244, 244);
+        /* padding-left:em; */
+        /* padding-right:-em ; */
+        background: transparent;
+        border-style: solid;
+    
       }
 
 
-      input#formexample{
-        background: rgb(255, 255, 255);
-      }
+      input#form3example1c.form-control{
+      background: transparent;
+    }
+
+    .form-control, .form-control:focus{
+        background: none;
+        color:aliceblue;
+    
+        align-items: center;
+
+    }
+
+      section.vh-100{
+        background: linear-gradient( #79024dbd, #021561bd),  url(paint.5.png );
+
+
+     }
+
+     .btn-group{
+        margin-left:5%;
+        margin-bottom: 15%;
+     }
+
+     p{
+        text-align: center;
+    
+     }
 
       </style>
   

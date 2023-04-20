@@ -8,185 +8,225 @@
     rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
     crossorigin="anonymous">
     <title>login</title>
-</head>
-
-
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
-    
-   body{
-    height: 100vh;
-    display: flex;
-    align-items: center;r
-    justify-content: center;
-    background: #030006;
-    background-image: url(paint.5.png);
-    background-size: cover;
-    
-    
-
-   }
 
    
 
 
-    div.email{
-        border-radius:15px;
-        border-width:5%;
-        padding-bottom: 15px;
-        margin-bottom: %;
-       align-content: center;
-     }
-
-    div.password{
-        border-radius:15px;
-        border-width:5%;
-        padding-bottom:x;
-        margin-bottom: 2;
-        
-       
-
-    }
-
-    input{
-        border-radius:6px;
-        padding-bottom:1px;
-        border-color: rgb(0, 0, 0);
-        font-family: League Spartan;
-        border-style:none;
-        background-color: #e9e9e9;
-        font-size: small;
-        
-
-        
-        
-        
-        
-    }
-
-
-
-
-    
-
-    #login{
-        margin-bottom: 20%;
-        text-align: center;
-        width: 250px;
-        height: 270px;
-        padding: 20px;
-        border-radius: 12px;
-        background:  rgba(3, 3, 16, 0.7);
-        border-block-width: 50%
-       
-        
-;
-    
-       
-
-       
-    }
-    h6{
-        color: #d8c9bf;
-        font-weight:400
-       
-    
-        
-
-    }
-
-    .checkbox{
-        font-family: League Spartan;
-        font-size: 70%;
-        color: aliceblue;
-        margin-right: 28% ;
-        border-style: none;
-        margin-top:0%;
-        border-style:
-     
-    }
-
-    button{
-        border-style:none;
-        border-radius: 6px;
-        margin-top: 2%;
-        margin: 7%;
-        padding-right: 25%;
-        padding-left: 26%;
-        background:linear-gradient(To right, #ae3fb4, #432db6);
-        color: rgb(255, 255, 255);
-        font-weight: 600;
-        font-size: small;
-    }
-
-    .Google{
-        margin-top: 1%;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-bottom:4%;
-        font-size: 85%;
-        background: #3e40eb;
-        color: #f9f4ff;
-        
-    }
-
-    .forgot {
-    padding-top:3%;
-    font-size: small;
-    color: #fafafa;
-    text-decoration: none;
-
-    }
-
-
-
-    
-</style>
+</head>
 <body>
-
-  
-
-   <form action="">
-
-
-     <div id="login">
-
-        <h6>Login</h6>
-    <div class="email"> 
-    <input type="email" placeholder="username">
-
-    </div>
-    <div class="password">
-    <input type="text" id="password" placeholder="password">
-    </div>
-     
     
-<div>
-     <button>Sign In</button>
-     </div>
-     
-     <div>
-     <button class="Google">Sign in with Google</button>
-
-  
-     <div class="checkbox">
-        <input type="checkbox" id="check">
-        <label for="check">Remember Me</label>
-         </div>
-
-
-    <div class="forgot">
-        <a href="forgot">Forgot Password?</a>
+    <div class="card-body">
+    
+    <!-- Pills navs -->
+    <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+          aria-controls="pills-login" aria-selected="true">Login</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+          aria-controls="pills-register" aria-selected="false">Register</a>
+      </li>
+    </ul>
+    <!-- Pills navs -->
+    
+    <!-- Pills content -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+        <form>
+          <div class="text-center mb-3">
+            <p>Sign in with:</p>
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-google"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-twitter"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-github"></i>
+            </button>
+          </div>
+    
+          <p class="text-center">or:</p>
+    
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="loginName" class="form-control" />
+            <label class="form-label" for="loginName">Email or username</label>
+          </div>
+    
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input type="password" id="loginPassword" class="form-control" />
+            <label class="form-label" for="loginPassword">Password</label>
+          </div>
+    
+          <!-- 2 column grid layout -->
+          <div class="row mb-4">
+            <div class="col-md-6 d-flex justify-content-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-3 mb-md-0">
+                <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                <label class="form-check-label" for="loginCheck"> Remember me </label>
+              </div>
+            </div>
+    
+            <div class="col-md-6 d-flex justify-content-center">
+              <!-- Simple link -->
+              <a href="#!">Forgot password?</a>
+            </div>
+          </div>
+    
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+    
+          <!-- Register buttons -->
+          <div class="text-center">
+            <p>Not a member? <a href="#!">Register</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+        <form>
+          <div class="text-center mb-3">
+            <p>Sign up with:</p>
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-google"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-twitter"></i>
+            </button>
+    
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-github"></i>
+            </button>
+          </div>
+    
+          <p class="text-center">or:</p>
+    
+          <!-- Name input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="registerName" class="form-control" />
+            <label class="form-label" for="registerName">Name</label>
+          </div>
+    
+          <!-- Username input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="registerUsername" class="form-control" />
+            <label class="form-label" for="registerUsername">Username</label>
+          </div>
+    
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="registerEmail" class="form-control" />
+            <label class="form-label" for="registerEmail">Email</label>
+          </div>
+    
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input type="password" id="registerPassword" class="form-control" />
+            <label class="form-label" for="registerPassword">Password</label>
+          </div>
+    
+          <!-- Repeat Password input -->
+          <div class="form-outline mb-4">
+            <input type="password" id="registerRepeatPassword" class="form-control" />
+            <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+          </div>
+    
+          <!-- Checkbox -->
+          <div class="form-check d-flex justify-content-center mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+              aria-describedby="registerCheckHelpText" />
+            <label class="form-check-label" for="registerCheck">
+              I have read and agree to the terms
+            </label>
+          </div>
+    
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+        </form>
+      </div>
     </div>
+    <!-- Pills content -->
+  </div>
 
-     </form>
-   </div>
+</body>
 
 
-</div>
+<style>
+body{
+    margin: auto;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top:13%;
+    background-image: linear-gradient( to right, #10022bf3, #0a0112de), url(Medium\ Banner\ Ramadan\ Mubarak\ Greeting.png ); ;
+    background-size:100%
+}
 
-</div>
+.card-body{
+    margin:auto;
+    border-radius: 1em;
+    border-style: solid;
+    color: aliceblue;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 8%;
+    align-items: center;
+    border-width:-10%;
+    margin-left: 12%;
+    margin-right:12%;
+    justify-content: center;
+    
+}
+.form-control{ 
+    background: none;
+}
+
+img{
+align-items: center;
+justify-content: center; 
+margin-right: -50%;
+margin-left: %;
+margin-top: -65%;
+width: 33%;
+}
+
+.btn{
+    border-style: solid;
+
+}
+
+a#tab-login.nav-link.active{
+background:none;
+border-style:solid;
+
+}
+button.btn.btn-primary{
+    background: none;
+    border-color: aliceblue;
+    margin-left:
+
+}
+
+
+</style>
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
  crossorigin="anonymous"></script>

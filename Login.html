@@ -27,9 +27,10 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto text-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html"><button>Home</button></a>
+                      </li>
+                
                   <li class="nav-item">
                     <a class="nav-link" href="#"><button>Shop</button></a>
                   </li>
@@ -43,7 +44,7 @@
                     <a class="nav-link" href="resgistrar.html"> <button>Sign-up</button></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link"  href="Login.html"><button> Login</button></a>
+                    <a class="nav-link active"  href="Login.html"><button id="active"> Login</button></a>
                   </li><li class="nav-item">
                     <a class="nav-link"  href="#"> </a>
                   </li>
@@ -132,7 +133,7 @@
     
           <!-- Register buttons -->
           <div class="text-center">
-            <p>Not a member? <a href="#!">Register</a></p>
+            <p>Not a member? <a href="resgistrar.html">Register</a></p>
           </div>
         </form>
       </div>
@@ -224,14 +225,17 @@ body{
     padding-top: 4%;
     align-items: center;
     border-width:-%;
-    margin-left: 12%;
-    margin-right:12%;
+    margin-left: 25%;
+    margin-right:25%;
     justify-content: center;
-    margin-top: -8%;
+    margin-top: -2%;
     
 }
-.form-control{ 
+.form-control, .form-control:focus{ 
+    margin:auto;
     background: transparent;
+    color: aliceblue;
+    width:%
 
 }
 
@@ -253,8 +257,17 @@ width: 33%;
 background:none;
 border-style:solid;
 border-color: white
+}
+
+button#active{
+border-style: none;
+border-color: transparent;
+color: rgb(95, 177, 255);
+font-weight: 600;
 
 }
+
+
 
 #tab-register.nav-link{
     color: aliceblue;
@@ -264,7 +277,7 @@ border-color: white
 button.btn.btn-primary{
     background: none;
     border-color: aliceblue;
-    margin-left: 45.5%
+    margin-left: 43.5%
 
 }
 
@@ -375,6 +388,12 @@ margin-bottom:10%;
 input.{
     background: none;
 }
+a{
+    text-decoration: none;
+    color: rgb(93, 198, 254);
+    font-weight: 500;
+}
+    
 
 
 

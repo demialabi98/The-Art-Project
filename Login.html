@@ -7,25 +7,68 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" 
+    integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    
     <title>login</title>
-
-   
-
-
 </head>
 <body>
+
+<header>
+    <div class="conta">
+        <nav class="navbar navbar-expand-lg bg-body-transparent">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img src="artlogo.png" alt="logo"></a>
+            <label for="searchbar"></label>
+                <input type=search id="search" placeholder="search">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><button>Shop</button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><button>About Us </button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"   href="#"> <button>Explore</button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="resgistrar.html"> <button>Sign-up</button></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="Login.html"><button> Login</button></a>
+                  </li><li class="nav-item">
+                    <a class="nav-link"  href="#"> </a>
+                  </li>
+                   </ul>
+
+                   
+              </div>
+            </div>
+          </nav>
+       
+
+
+</header>
+
+
+
+
+
+
     
     <div class="card-body">
     
     <!-- Pills navs -->
     <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
-      <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
-          aria-controls="pills-login" aria-selected="true">Login</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
-          aria-controls="pills-register" aria-selected="false">Register</a>
+    
       </li>
     </ul>
     <!-- Pills navs -->
@@ -36,20 +79,21 @@
         <form>
           <div class="text-center mb-3">
             <p>Sign in with:</p>
-            <button type="button" class="btn btn-link btn-floating mx-1">
-              <i class="fab fa-facebook-f"></i>
+           
+          
             </button>
     
             <button type="button" class="btn btn-link btn-floating mx-1">
-              <i class="fab fa-google"></i>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg> 
+                
             </button>
     
             <button type="button" class="btn btn-link btn-floating mx-1">
-              <i class="fab fa-twitter"></i>
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"/><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"/></svg>
             </button>
     
             <button type="button" class="btn btn-link btn-floating mx-1">
-              <i class="fab fa-github"></i>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#03A9F4" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"/></svg>
             </button>
           </div>
     
@@ -139,18 +183,12 @@
             <label class="form-label" for="registerPassword">Password</label>
           </div>
     
-          <!-- Repeat Password input -->
-          <div class="form-outline mb-4">
-            <input type="password" id="registerRepeatPassword" class="form-control" />
-            <label class="form-label" for="registerRepeatPassword">Repeat password</label>
-          </div>
-    
-          <!-- Checkbox -->
+       
           <div class="form-check d-flex justify-content-center mb-4">
             <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
               aria-describedby="registerCheckHelpText" />
             <label class="form-check-label" for="registerCheck">
-              I have read and agree to the terms
+     
             </label>
           </div>
     
@@ -169,30 +207,32 @@
 body{
     margin: auto;
     align-items: center;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top:13%;
-    background-image: linear-gradient( to right, #10022bf3, #0a0112de), url(Medium\ Banner\ Ramadan\ Mubarak\ Greeting.png ); ;
+    margin-left: ;
+    margin-right: %;
+    margin-top:%;
+    background-image: linear-gradient( to right, #180245f2, #18012be2), url(Medium\ Banner\ Ramadan\ Mubarak\ Greeting.png ); ;
     background-size:100%
 }
 
 .card-body{
     margin:auto;
     border-radius: 1em;
-    border-style: solid;
+    
     color: aliceblue;
     padding-left: 9%;
     padding-right: 9%;
-    padding-top: 8%;
+    padding-top: 4%;
     align-items: center;
-    border-width:-10%;
+    border-width:-%;
     margin-left: 12%;
     margin-right:12%;
     justify-content: center;
+    margin-top: -8%;
     
 }
 .form-control{ 
-    background: none;
+    background: transparent;
+
 }
 
 img{
@@ -209,17 +249,136 @@ width: 33%;
 
 }
 
-a#tab-login.nav-link.active{
+#tab-login.nav-link.active{
 background:none;
 border-style:solid;
+border-color: white
 
+}
+
+#tab-register.nav-link{
+    color: aliceblue;
+    border-style:solid;
+    border-color:white
 }
 button.btn.btn-primary{
     background: none;
     border-color: aliceblue;
-    margin-left:
+    margin-left: 45.5%
 
 }
+
+i.fa-brands.fa-google{
+    color: antiquewhite;
+
+
+}
+
+button{
+    border-radius: 15px;
+    background: transparent;
+    border-color: hsl(260, 100%, 99%);
+    color: rgb(251, 252, 255);
+    padding-right: 20px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    border-style: solid;
+    justify-content: space-between;
+    margin-left:2em;
+  }
+
+  #search{
+    border-radius: 10em;
+    border-style:solid;
+    border-color: white;
+    background:transparent;
+    padding-top: .4%;
+    width: 32%;
+    margin-left:-12%;
+    margin-top:.1%;
+    text-align: center;
+    color: white;
+    border-bottom: em;
+  }
+
+
+ul.navbar-nav{
+  justify-content: space-between;
+    
+    
+}
+
+
+
+
+
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-weight: 3500;
+    font-size: 100%;
+    word-spacing: 20px;
+    justify-content: right;
+    
+ 
+}
+
+
+    
+
+
+.navbar-brand{
+    font-weight: 600;
+    color:rgb(255, 255, 255); 
+    letter-spacing: 3;
+    height:1em;
+}  
+
+
+
+
+    
+
+
+header{
+    padding-bottom:6%;
+    word-spacing: 4%;
+   
+}
+
+.backdrop{
+  
+  padding-top: 5%;
+  padding-bottom: 10%;
+  margin-bottom: 40%;
+  border-radius: 4%;
+  
+}
+  
+
+
+i.fa-search{
+color: aliceblue;
+margin-left: 2%;
+border-style: 
+
+}
+
+img{
+align-items: center;
+justify-content: center; 
+margin-left: 0%;
+margin-top: -10%;
+width: 20%;
+margin-bottom:10%;
+}
+
+input.{
+    background: none;
+}
+
+
+
+
 
 
 </style>
